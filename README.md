@@ -16,7 +16,7 @@ shapeNumber(100, '0[.]0[,]00') // => '100,00'
 shapeNumber(10000000, '0[.]0[,]00') // => '10.000.000,00'
 ```
 
-## Paramters
+## Parameters
 
 ```
 shapeNumber(value, format, shouldRoundIfNeeded = true)
