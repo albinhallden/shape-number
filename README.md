@@ -26,17 +26,13 @@ shapeNumber(value, format, shouldRoundIfNeeded = true)
 
 `0[s]0[d]00`
 
-- `s` - defines how each third integer character should be separated.
+- `s` - defines how each third integer character should be separated. This can be zero or many characters.
 
-  - This can be be any value. `0[]0[d]00`, `0[ss]0[d]00`, `0[..]0[d]00`
+- `d` - defines separation characters between the integer and decimal value. This can be zero or many characters.
 
-- `d` - defines separation characters between the integer and decimal value.
+- `00` - defines the amout of decimals. The amount of zeroes in the end defines the number.
 
-  - This can be be any value. `0[s]0[]00`, `0[s]0[dd]00` or `0[s]0[..]00`
-
-- `00` -defines the amout of decimals
-
-  - `0[..]0[d]` - yields zero decimals,
+  - `0[..]0[d]` - yields zero decimals
 
   - `0[..]0[d]0` - yields 1 decimal
 
