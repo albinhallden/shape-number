@@ -1,0 +1,30 @@
+{
+  "name": "shape-number",
+  "version": "1.0.0",
+  "description": "Format numbers from string template",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albinhallden/shape-number.git"
+  },
+  "keywords": [
+    "number",
+    "format"
+  ],
+  "author": "Albin Halldén",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albinhallden/shape-number/issues"
+  },
+  "homepage": "https://github.com/albinhallden/shape-number#readme",
+  "dependencies": {
+    "ramda": "^0.24.1"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}
