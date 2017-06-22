@@ -33,10 +33,7 @@ const main = (value, format, shouldRoundValue = true) => {
   const regExp = /\d\[(.*)\]\d\[(.*)\](\d*)/;
   const matches = format.toString().match(regExp);
 
-  if (!matches) {
-    console.log('Could not match against format', format); // eslint-disable-line
-    return null;
-  }
+  if (!matches || value === undefined) return null;
 
   const [thousandSeperator, decimalSeparator, decimals] = matches.slice(1);
   const decimalsCount = decimals.length;
@@ -44,5 +41,4 @@ const main = (value, format, shouldRoundValue = true) => {
   return formatNumber(shouldRoundValue, decimalsCount, decimalSeparator, thousandSeperator, value)
 }
 
-// main(100.6, '0[.]0[.]00');
 module.exports = main;
