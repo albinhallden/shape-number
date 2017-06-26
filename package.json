@@ -1,6 +1,6 @@
 {
   "name": "shape-number",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Format numbers from string template",
   "main": "index.js",
   "scripts": {
